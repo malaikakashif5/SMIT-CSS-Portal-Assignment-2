@@ -1,0 +1,277 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    background-color: #f5f5f5;
+    font-family: Arial, sans-serif;
+}
+
+
+/* MAIN */
+
+.main-container {
+    width: 780px;
+    height: 450px;
+    margin: 45px auto;
+    position: relative;
+
+}
+
+
+.main-container>img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+/* ORANGE */
+
+.orange {
+    position: absolute;
+    top: 45px;
+    left: 72px;
+    width: 260px;
+    height: 310px;
+    background-color: #ff6738;
+    border-radius: 0 130px 130px 0;
+}
+
+
+.orange img {
+    position: absolute;
+    width: 390px;
+    left: -52px;
+    top: 48px;
+
+
+}
+
+
+
+
+
+/* GRAY CARD */
+
+.gray {
+    position: absolute;
+    top: 45px;
+    right: 40px;
+    width: 315px;
+    height: 310px;
+    background-color: #293041;
+}
+
+
+.main-content {
+    position: relative;
+    padding: 25px 30px;
+    color: white;
+}
+
+
+/* AIRMAX */
+
+.main-content h3 {
+    color: #ff673b;
+    font-size: 17px;
+    font-weight: 600;
+    text-transform: capitalize;
+}
+
+
+/* ICONS */
+
+.icons {
+    position: absolute;
+    top: 27px;
+    right: 25px;
+    display: flex;
+    gap: 21px;
+}
+
+
+.icons i {
+    color: white;
+    font-size: 13px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+
+.icons i:hover {
+    color: #ff673b;
+    transform: translateY(-3px);
+}
+
+
+/* WINTER */
+
+.main-content p {
+    margin-top: 68px;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+
+/* PRODUCT NAME */
+
+.main-content h1 {
+    margin-top: 9px;
+    font-size: 22px;
+    line-height: 1.2;
+    font-weight: 700;
+}
+
+
+/* PRICE */
+
+.price {
+    margin-top: 8px;
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+
+.price span {
+    font-size: 17px;
+    font-weight: bold;
+}
+
+
+.price del {
+    color: #8e929b;
+    font-size: 13px;
+}
+
+
+/* SIZE */
+
+.size {
+    margin-top: 16px;
+    display: flex;
+    align-items: center;
+    gap: 17px;
+}
+
+
+.size span {
+    font-size: 9px;
+    margin-right: 5px;
+    color: #ddd;
+}
+ 
+
+
+/* BUTTON */
+
+.size button {
+    border: none;
+    background: transparent;
+    color: white;
+    font-size: 10px;
+    cursor: pointer;
+    transition: 0.25s;
+}
+
+
+.size button:hover {
+    color: #ff673b;
+    transform: translateY(-2px);
+}
+
+
+.size button:focus {
+    color: #ff673b;
+    font-weight: bold;
+}
+
+
+/* COLOR */
+
+.color {
+    margin-top: 14px;
+    display: flex;
+    align-items: center;
+    gap: 17px;
+}
+
+
+.color span {
+    font-size: 9px;
+    margin-right: 5px;
+    color: #ddd;
+}
+
+
+.color button {
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    border: 2px solid transparent;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+
+.color button:hover {
+
+    border-color: white;
+}
+
+
+.yellow {
+    background-color: #ffc21c;
+}
+
+
+.black {
+    background-color: #050505;
+}
+
+
+.blue {
+    background-color: #159bc1;
+}
+  /* BUTTONS */
+.buttons {
+    margin-top: 14px;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    
+}
+
+.buttons i {
+    color: white;
+    font-size: 10px;
+    
+}
+
+
+.btn1,.btn2 {
+    border: none;
+    outline: none;
+    background: transparent;
+
+}
+
+.buttons span{
+    color: white;
+    font-size: 10px;
+}
+.buttons span:hover{
+    color: #ff673b;
+    transition: 0.24s;
+    cursor: pointer;
+}
+.buttons i:hover{
+    color: #ff673b;
+    transition: 0.24s;
+    cursor: pointer;
+}
