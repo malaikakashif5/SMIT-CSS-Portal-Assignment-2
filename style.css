@@ -11,7 +11,7 @@ body {
 }
 
 
-/* MAIN */
+/* MAIN Container */
 
 .main-container {
     width: 780px;
@@ -21,6 +21,7 @@ body {
 
 }
 
+/* background img */
 
 .main-container>img {
     width: 100%;
@@ -29,7 +30,7 @@ body {
 }
 
 
-/* ORANGE */
+/* ORANGE D */
 
 .orange {
     position: absolute;
@@ -41,6 +42,8 @@ body {
     border-radius: 0 130px 130px 0;
 }
 
+
+/* SHOE IMG */
 
 .orange img {
     position: absolute;
@@ -55,7 +58,7 @@ body {
 
 
 
-/* GRAY CARD */
+/* GRAY SIDE CARD */
 
 .gray {
     position: absolute;
@@ -74,7 +77,7 @@ body {
 }
 
 
-/* AIRMAX */
+/* WORD AIRMAX */
 
 .main-content h3 {
     color: #ff673b;
@@ -84,13 +87,17 @@ body {
 }
 
 
-/* ICONS */
+/* TOPICONS */
 
 .icons {
     position: absolute;
     top: 27px;
     right: 25px;
+
+    /* aik line me krdeta hai  */
     display: flex;
+
+
     gap: 21px;
 }
 
@@ -99,17 +106,21 @@ body {
     color: white;
     font-size: 13px;
     cursor: pointer;
+
+    /* smoothly or 0.3 second me hoga */
     transition: 0.3s;
 }
 
 
 .icons i:hover {
     color: #ff673b;
+
+    /* verticcally oper hoga  */
     transform: translateY(-3px);
 }
 
 
-/* WINTER */
+/* WINTER COLLECTION */
 
 .main-content p {
     margin-top: 68px;
@@ -118,7 +129,7 @@ body {
 }
 
 
-/* PRODUCT NAME */
+/* PRODUCT NAME SNEAKER*/
 
 .main-content h1 {
     margin-top: 9px;
@@ -165,7 +176,7 @@ body {
     margin-right: 5px;
     color: #ddd;
 }
- 
+
 
 
 /* BUTTON */
@@ -238,40 +249,143 @@ body {
 .blue {
     background-color: #159bc1;
 }
-  /* BUTTONS */
+
+/* BUTTONS */
 .buttons {
     margin-top: 14px;
     display: flex;
     align-items: center;
     gap: 30px;
-    
+
 }
 
 .buttons i {
     color: white;
     font-size: 10px;
-    
+
 }
 
 
-.btn1,.btn2 {
+.btn1,
+.btn2 {
     border: none;
     outline: none;
     background: transparent;
 
 }
 
-.buttons span{
+.buttons span {
     color: white;
     font-size: 10px;
 }
-.buttons span:hover{
+
+.buttons span:hover {
     color: #ff673b;
     transition: 0.24s;
     cursor: pointer;
 }
-.buttons i:hover{
+
+.buttons i:hover {
     color: #ff673b;
     transition: 0.24s;
     cursor: pointer;
+}
+
+/* RESPONSIV */
+
+@media screen and (max-width: 600px) {
+    body {
+        position: relative;
+        min-height: 100vh;
+        display: flex;
+        justify-content: center;
+
+        /* content center krny k liye */
+        align-items: center;
+
+
+        padding: 20px 10px;
+        overflow-x: hidden;
+
+    }
+
+    .main-container {
+        width: 90%;
+        max-width: 340px;
+        height: auto;
+        margin: 0px auto;
+        display: flex;
+
+        /* orange oper or gray  nechy krny k liye  */
+        flex-direction: column;
+
+
+        border-radius: 16px;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+        overflow: hidden;
+        z-index: 1;
+    }
+
+    .main-container>img {
+        display: block !important;
+
+        /* aik jgah hi rhygi move nhi hogi  */
+        position: fixed;
+
+
+
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+
+        /* pory pr cover hojaigi */
+        object-fit: cover;
+
+        /* negative isliye because ab baqi element sb esk oper ayngy  */
+        z-index: -1;
+
+    }
+
+    .orange {
+        position: relative;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 220px;
+        border-radius: 0px 50% 0 0;
+        background-color: #ff673b;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .orange img {
+        position: relative;
+        width: 85%;
+        max-width: 260px;
+        left: 0%;
+        top: 0%;
+
+        /* image ko left trf kryga */
+        transform: rotate(-15deg);
+    }
+
+    .gray {
+        position: relative;
+        top: 0;
+        right: 0;
+        width: 100%;
+        height: auto;
+        background-color: #293041;
+    }
+
+    .main-content {
+        padding: 20px;
+    }
+
+    .main-content p {
+        margin-top: 25px;
+    }
+
 }
